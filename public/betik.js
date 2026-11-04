@@ -22,7 +22,7 @@ function kartOlustur(etkinlik) {
   const kart = document.createElement("article");
   kart.classList.add("kart");
 
-  const baslik = document.createElement("h3");
+ const baslik = document.createElement("h2");
   baslik.textContent = etkinlik.baslik;
 
   const tarih = document.createElement("p");

@@ -125,8 +125,9 @@ section {
   background: var(--yuzey-renk);
 }
 
-.kart h3 {
+.kart h2 {
   margin: 0 0 8px;
+  font-size: 1.2rem;
 }
 
 .kart p {
