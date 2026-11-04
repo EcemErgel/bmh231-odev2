@@ -23,3 +23,13 @@ npm start
 ```
 
 Ardından tarayıcıda http://localhost:3000 adresini açın.
+## API uç noktaları
+
+| Yöntem | Yol | Durum | Açıklama |
+|---|---|---|---|
+| GET | `/` ve `public/` altındaki dosyalar | 200 / 404 | Ön yüz dosyaları |
+| GET | `/api/etkinlikler` | 200 | Tüm etkinlikler (JSON) |
+| GET | `/api/etkinlikler?tur=atolye` | 200 | Türe göre süzülmüş etkinlikler |
+| GET | `/api/etkinlikler/3` | 200 | Tek etkinlik |
+| GET | `/api/etkinlikler/999` | 404 | `{"hata": "Etkinlik bulunamadı"}` |
+| GET dışındaki yöntemler | herhangi | 405 | `Allow: GET` başlığı |
