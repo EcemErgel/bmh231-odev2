@@ -23,6 +23,8 @@ npm start
 ```
 
 Ardından tarayıcıda http://localhost:3000 adresini açın.
+
+
 ## API uç noktaları
 
 | Yöntem | Yol | Durum | Açıklama |
@@ -33,3 +35,7 @@ Ardından tarayıcıda http://localhost:3000 adresini açın.
 | GET | `/api/etkinlikler/3` | 200 | Tek etkinlik |
 | GET | `/api/etkinlikler/999` | 404 | `{"hata": "Etkinlik bulunamadı"}` |
 | GET dışındaki yöntemler | herhangi | 405 | `Allow: GET` başlığı |
+
+## Ekran görüntüsü
+
+![Ana sayfa](ekran-goruntuleri/ana-sayfa.png)
