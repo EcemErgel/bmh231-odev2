@@ -187,4 +187,38 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background:
+  background: var(--ana-renk-koyu);
+}
+
+.hata {
+  color: var(--hata-renk);
+}
+
+.basari {
+  color: var(--basari-renk);
+}
+
+footer {
+  padding: var(--bosluk);
+  text-align: center;
+  color: #4b5563;
+}
+
+/* ===== 6. Duyarlı tasarım ===== */
+@media (max-width: 600px) {
+  .ust-bant {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .arac-cubugu {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .arama input {
+    min-width: 0;
+    width: 100%;
+  }
+}
